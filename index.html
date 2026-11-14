@@ -164,6 +164,16 @@ body.dark-mode .policy-timeline-event::before{border-color:var(--paper)}
 .article-section .reference-note{font-size:.84em;line-height:1.55;opacity:.88}
 .case-meaning{padding:10px 14px;font-size:.92em}
 @media(max-width:700px){.article-section p{line-height:1.68}.multi-case{padding:19px 0}}
+
+/* Justificação final: parágrafos de leitura em todas as telas. */
+main.article-column .article-section p:not(.reference-note):not(.timeline-sources):not(.case-location),
+main.article-column .article-toc p,
+.cover .cover-content > p {
+  text-align: justify !important;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
 </style>
 </head>
 <body>
